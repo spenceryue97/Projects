@@ -1,0 +1,17 @@
+package numbers;
+
+import java.util.Scanner;
+
+public class FindPIToTheNthDigit {
+	
+	static final int MAX = 15;
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		if(n > 15) n = MAX;
+		double ans = Math.round(Math.PI * Math.pow(10, n)) / Math.pow(10, n);
+		System.out.println(ans);
+	}
+
+}
